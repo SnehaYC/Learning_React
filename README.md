@@ -1,3 +1,5 @@
 # Learning React
 
-** ## Section - I **
+## Section - I
+
+** This is bold **
