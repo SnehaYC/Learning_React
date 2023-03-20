@@ -2,4 +2,4 @@
 
 ## Section - I
 
-** This is bold **
+**This _is_ bold**
