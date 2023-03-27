@@ -84,3 +84,5 @@
      console.log(age) //undefined
 
 ### Reference and Primitive type
+
+### Array Methods
