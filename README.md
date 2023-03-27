@@ -86,3 +86,5 @@
 ### Reference and Primitive type
 
 ### Array Methods
+
+## Section - III
