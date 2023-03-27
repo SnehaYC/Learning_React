@@ -28,4 +28,59 @@
 ### What is Single Page Application(SPA)?
 
 - React can be used to control parts of HTML pages or entire pages; i.e 'Widget' approach on a multi-page-application, these pages are still rendered on and served by a backend server.
-- React can also be used to control the entire frontend of a web application; i.e. Single-Page-Application. server only sends one HTML page, thereafter, React takes over and controls the UI
+- React can also be used to control the entire frontend of a web application; i.e. Single-Page-Application. server only sends one HTML page, thereafter, React takes over and controls the UI.
+
+## Section - II
+
+### Understanding 'let' and 'const'
+
+- let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
+- The other difference between var and let is that the latter can only be accessed after its declaration is reached.(temporal dead zone)
+- A let or const variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until code execution reaches the line where the variable is declared and initialized.
+- While inside the TDZ, the variable has not been initialized with a value, and any attempt to access it will result in a ReferenceError.
+
+### Arrow Functions
+
+- Syntax:
+- function myFun() {} // normal function
+- const myFun = () => {} // arrow function
+
+### Export and Import(Modules)
+
+- The export declaration is used to export values from a JavaScript module. Exported values can then be imported into other programs with the import declaration or dynamic import. - The value of an imported binding is subject to change in the module that exports it — when a module updates the value of a binding that it exports, the update will be visible in its imported value.
+- Every module can have two different types of export, named export and default export.
+- The ES6 is a JavaScript standard. With the help of ES6, we can create modules in JavaScript. In a module, there can be classes, functions, variables, and objects as well.
+- To make all these available in another file, we can use export and import. The export and import are the keywords used for exporting and importing one or more members in a module.
+
+### Classes
+
+-
+
+### Classes/Property/Methods
+
+-
+
+### Spread and Rest Operators
+
+- Syntax: ...
+- Spread Oprator: Used to split up array elements or object properties.
+- ex. 1. const newArray = [...oldArray, 1, 2]<br/> 2. const newObject = {...oldObject,newProp:5}
+- Rest Oprator: Used to merge a list of function arguments into an array
+  function sortArgs(...args){
+  return args.sort()
+  }
+
+### Destructuring
+
+- Destructuring easily extract array elemts or object properties and store them in variables
+- 1. Array Destructuring
+     [a,b] = ['Hello','there']
+     console.log(a) //Hello
+     console.log(b) //there
+
+- 2. Object Destructuring
+     {name} = {name:'Mina',age:24}
+     console.log(name) // Mina
+     console.log(age) //undefined
+
+### Reference and Primitive type
