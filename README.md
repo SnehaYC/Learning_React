@@ -155,12 +155,12 @@ export default function App() {
 
 - Importing this custom component
 
-````javascript
-```import ExpenseItem from './components/ExpenseItem';
+```javascript
+import ExpenseItem from './components/ExpenseItem';
 function App(){
   return (
     <div>
     <ExpenseItem></ExpenseItem>
   );
 }
-````
+```
