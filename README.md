@@ -67,7 +67,7 @@
 - ex.
 
 ```javascript
-1. const newArray = [...oldArray, 1, 2]<br/> 2. const newObject = {...oldObject,newProp:5}
+1. const newArray = [...oldArray, 1, 2] 2. const newObject = {...oldObject,newProp:5}
 ```
 
 - Rest Oprator: Used to merge a list of function arguments into an array
@@ -175,4 +175,32 @@ function App(){
     <ExpenseItem></ExpenseItem>
   );
 }
+```
+
+## Exercise - 2: Building a First Component
+
+- Your task is to build a custom <ExerciseComponent /> that outputs the text "First exercise - done!" on the screen.
+- App.js
+
+```
+import React from 'react';
+import ExerciseComponent from './ExerciseComponent.js';
+
+export default function App() {
+    return (
+    <ExerciseComponent></ExerciseComponent>
+    );
+}
+```
+
+- ExerciseComponent.js
+
+```
+import React from 'react';
+
+function ExerciseComponent(){
+    return <h1>First exercise - done!</h1>
+}
+
+export default ExerciseComponent;
 ```
