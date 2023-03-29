@@ -92,3 +92,9 @@
 ## What are Components?
 
 - Components are reusable building blocks in our user interface. components are just a combination of HTML code, CSS code for styling and some JavaScript logic.
+
+## Declarative Approach
+
+- React allows you to create re-usable and reactive componetns consisting of HTML and JavaScript and CSS.
+
+- Declarative approach define the desired target state and let React figure out the actual JavaScript DOM instruction.
