@@ -89,12 +89,26 @@
 
 ## Section - III
 
-## What are Components?
+### What are Components?
 
 - Components are reusable building blocks in our user interface. components are just a combination of HTML code, CSS code for styling and some JavaScript logic.
 
-## Declarative Approach
+### Declarative Approach
 
 - React allows you to create re-usable and reactive componetns consisting of HTML and JavaScript and CSS.
 
 - Declarative approach define the desired target state and let React figure out the actual JavaScript DOM instruction.
+
+### Creating a project
+
+- Create React App: This is a tool which is use to create React projects.
+- It contains pre-configured folders with some basic React code files and a bunch of configuration files which help you build the react app.
+- Step: 1 (Run the following command)
+
+  - npx create-react-app project_name
+  - cd project_name
+  - npm start
+
+- We can run our project with the help of following commands on visual studio
+  - npm install
+  - npm start
