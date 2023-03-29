@@ -112,3 +112,55 @@
 - We can run our project with the help of following commands on visual studio
   - npm install
   - npm start
+
+## Introduction to JSX
+
+- JSX is basically HTML code inside of JavaScript. JSX stands for JavaScript XML
+
+## How react works
+
+- We built our own custom HTML elements and Componetns is basically just a custom HTML element and we do that with the declarative approach, which means we defined the desired target state and react is then responsible for generating and running the actual DOM instructions which update what's visible on the screen.
+
+## Exercise - 1: Working with JSX Code
+
+- Your task is to edit the JSX code of a provided React component such that it displays a h1 element with the text "Exercise done!" on the page.
+
+````javascript
+```import React from 'react';
+export default function App() {
+    return (
+        <div>
+            <p>Practicing React...</p>
+            <h1>Exercise done!</h1>
+        </div>
+    );
+}
+````
+
+## Building a First custom component
+
+- App.js is our root component.
+- With React we build a Component tree; we have main app Component at the top, and then below that, you could have any other kinds of custom HTML elements.
+- And other kinds of Components, which in the end hold other pieces of the user interface.
+- Only the top most Component is rendered directly into the HTML page with help of that Teact dom render instruction.
+- A Component in React is just a JavaScript function. A special kind of function special regarding what it returns JSX code.
+- ex.
+
+````javascript
+``` function ExpenseItem() {
+    return <h2>Expense item!</h2>;
+    }
+    export default ExpenseItem;
+````
+
+- Importing this custom component
+
+````javascript
+```import ExpenseItem from './components/ExpenseItem';
+function App(){
+  return (
+    <div>
+    <ExpenseItem></ExpenseItem>
+  );
+}
+````
