@@ -88,3 +88,7 @@
 ### Array Methods
 
 ## Section - III
+
+## What are Components?
+
+- Components are reusable building blocks in our user interface. components are just a combination of HTML code, CSS code for styling and some JavaScript logic.
