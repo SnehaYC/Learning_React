@@ -64,24 +64,36 @@
 
 - Syntax: ...
 - Spread Oprator: Used to split up array elements or object properties.
-- ex. 1. const newArray = [...oldArray, 1, 2]<br/> 2. const newObject = {...oldObject,newProp:5}
+- ex.
+
+```javascript
+1. const newArray = [...oldArray, 1, 2]<br/> 2. const newObject = {...oldObject,newProp:5}
+```
+
 - Rest Oprator: Used to merge a list of function arguments into an array
-  function sortArgs(...args){
-  return args.sort()
-  }
+
+```javascript
+function sortArgs(...args) {
+  return args.sort();
+}
+```
 
 ### Destructuring
 
 - Destructuring easily extract array elemts or object properties and store them in variables
 - 1. Array Destructuring
-     [a,b] = ['Hello','there']
-     console.log(a) //Hello
-     console.log(b) //there
+     ```javascript
+     [a, b] = ["Hello", "there"];
+     console.log(a); //Hello
+     console.log(b); //there
+     ```
 
 - 2. Object Destructuring
+     ```javascript
      {name} = {name:'Mina',age:24}
      console.log(name) // Mina
      console.log(age) //undefined
+     ```
 
 ### Reference and Primitive type
 
@@ -125,17 +137,17 @@
 
 - Your task is to edit the JSX code of a provided React component such that it displays a h1 element with the text "Exercise done!" on the page.
 
-````javascript
-```import React from 'react';
+```javascript
+import React from "react";
 export default function App() {
-    return (
-        <div>
-            <p>Practicing React...</p>
-            <h1>Exercise done!</h1>
-        </div>
-    );
+  return (
+    <div>
+      <p>Practicing React...</p>
+      <h1>Exercise done!</h1>
+    </div>
+  );
 }
-````
+```
 
 ## Building a First custom component
 
@@ -146,12 +158,12 @@ export default function App() {
 - A Component in React is just a JavaScript function. A special kind of function special regarding what it returns JSX code.
 - ex.
 
-````javascript
-``` function ExpenseItem() {
-    return <h2>Expense item!</h2>;
-    }
-    export default ExpenseItem;
-````
+```javascript
+function ExpenseItem() {
+  return <h2>Expense item!</h2>;
+}
+export default ExpenseItem;
+```
 
 - Importing this custom component
 
