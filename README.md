@@ -232,3 +232,82 @@ export default ExerciseComponent;
 - To add javascript code in html code to output dynamic data we use a special syntax inside of JSX code snippets; we can relapce had coded data with curly braces {}.
 - The sepcial thing about these curly braces inside of our JSX code snippets is that in these curly braces between them we can run basic JavaScript expressions.
 - In case of date; it is consider as a object it cant be output texts. for printing date we have to call ISOString() built in method avilable on all date objects to output it as a string.
+
+### Passing data via props
+
+- We can make our components reusable by using parameters and a concept called props in react.
+- We dont have direct access to the HTML code output by some component in other components; we can't just send our stored data there; we can utilize a concept called props.
+- We can pass data to the custom component by adding a attribute and inside of that components, we can then get access to all these attributes which might have been set on our custo component.
+- We are building our own custom HTML elements and just as HTML elements can have attributes it turns out that with react, our own custom components can also have attributes there, this concept is just called props instead of attribute and props simply stands for properties; we can set properties of our own custom components.
+- how do we get accessto the values defined in the place where we use our custom components?
+  - We can get values through parameters which is 'props'.
+  - props is a object which holds all the received attributes as properties.
+  - We can give any name to that parameter but typically it's name is props to make it clear that is this is object which holds all the values we get for the attributes on our custom elements.
+- We can make our components reusable and configurable by using props concepts. it allows you to make our components reusable, and it pass data from another component to this component.
+
+### Exercise - 3: Passing Data via "props"
+
+- You're working on the UI prototype for an online shop and your task is to output two product items (via the <Product /> component you find in the Product.js file) below the main page title ("My Demo Shop") in the App component.
+
+  - The two product items should use the same component (<Product />) but output different data (title, price & description). Data should be passed to the components (and output there) via props.
+  - The first product item is expected to display the following information:
+    - Title: Product 1
+    - Price: 10
+    - Description: First product
+  - The second product item is expected to display the following information:
+    - Title: Product 2
+    - Price: 20
+    - Description: Second product
+
+- Solution:
+- App.js
+
+```import React from 'react';
+   import Product from './Product';
+   import './styles.css';
+    export default function App() {
+      const item = [
+            {
+                title:"Product 1",
+                price:"10",
+                description:"First product",
+            },
+            {
+                title:"Product 2",
+                price:"20",
+                description:"Second product",
+            }
+          ];
+    return (
+        <div>
+            <h1>My Demo Shop</h1>
+            <Product
+            title={item[0].title}
+            price={item[0].price}
+            description={item[0].description}
+            ></Product>
+
+            <Product
+            title={item[1].title}
+            price={item[1].price}
+            description={item[1].description}
+            ></Product>
+        </div>
+    );
+}
+//export default App;
+```
+
+- Product.js
+
+```import React from 'react';
+   export default function Product(props) {
+    return (
+        <article className="product">
+            <h2>{props.title}</h2>
+            <p className="price">${props.price}</p>
+            <p>{props.description}</p>
+        </article>
+    );
+}
+```
