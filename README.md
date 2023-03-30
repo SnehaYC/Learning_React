@@ -314,5 +314,9 @@ export default ExerciseComponent;
 
 ### Working on date
 
-- By using toLocaleString() built-in method we can convert string of date in human readable format.
+- By using toLocaleString() built-in method we can convert string of date in to calender item(human readable) format.
 - This method is accessible on all date objects in JavaScript.
+
+### Spliting components into Multiple Components
+
+- If we have a component that has no content between opening and closing tags we can also write it as a self-closing element.
