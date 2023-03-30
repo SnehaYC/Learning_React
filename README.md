@@ -311,3 +311,8 @@ export default ExerciseComponent;
     );
 }
 ```
+
+### Working on date
+
+- By using toLocaleString() built-in method we can convert string of date in human readable format.
+- This method is accessible on all date objects in JavaScript.
