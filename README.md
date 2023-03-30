@@ -133,7 +133,7 @@ function sortArgs(...args) {
 
 - We built our own custom HTML elements and Componetns is basically just a custom HTML element and we do that with the declarative approach, which means we defined the desired target state and react is then responsible for generating and running the actual DOM instructions which update what's visible on the screen.
 
-## Exercise - 1: Working with JSX Code
+# Exercise - 1: Working with JSX Code
 
 - Your task is to edit the JSX code of a provided React component such that it displays a h1 element with the text "Exercise done!" on the page.
 
@@ -177,7 +177,7 @@ function App(){
 }
 ```
 
-## Exercise - 2: Building a First Component
+# Exercise - 2: Building a First Component
 
 - Your task is to build a custom <ExerciseComponent /> that outputs the text "First exercise - done!" on the screen.
 - App.js
@@ -204,3 +204,7 @@ function ExerciseComponent(){
 
 export default ExerciseComponent;
 ```
+
+## writing More Complex JSX code
+
+- In a components their is one important rule, regarding JSX(HTML) code which we return inside of a component; we must only have one root element here per return statement or per JSX code snippet.
