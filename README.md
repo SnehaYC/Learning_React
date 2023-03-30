@@ -125,15 +125,15 @@ function sortArgs(...args) {
   - npm install
   - npm start
 
-## Introduction to JSX
+### Introduction to JSX
 
 - JSX is basically HTML code inside of JavaScript. JSX stands for JavaScript XML
 
-## How react works
+### How react works
 
 - We built our own custom HTML elements and Componetns is basically just a custom HTML element and we do that with the declarative approach, which means we defined the desired target state and react is then responsible for generating and running the actual DOM instructions which update what's visible on the screen.
 
-# Exercise - 1: Working with JSX Code
+### Exercise - 1: Working with JSX Code
 
 - Your task is to edit the JSX code of a provided React component such that it displays a h1 element with the text "Exercise done!" on the page.
 
@@ -149,7 +149,7 @@ export default function App() {
 }
 ```
 
-## Building a First custom component
+### Building a First custom component
 
 - App.js is our root component.
 - With React we build a Component tree; we have main app Component at the top, and then below that, you could have any other kinds of custom HTML elements.
@@ -177,7 +177,7 @@ function App(){
 }
 ```
 
-# Exercise - 2: Building a First Component
+### Exercise - 2: Building a First Component
 
 - Your task is to build a custom <ExerciseComponent /> that outputs the text "First exercise - done!" on the screen.
 - App.js
@@ -205,6 +205,30 @@ function ExerciseComponent(){
 export default ExerciseComponent;
 ```
 
-## writing More Complex JSX code
+### writing More Complex JSX code
 
 - In a components their is one important rule, regarding JSX(HTML) code which we return inside of a component; we must only have one root element here per return statement or per JSX code snippet.
+
+### Adding Basic CSS Styling
+
+- To apply a certain look to html element we need to add CSS classes to our component; which are created in .css file.
+- On the wrapping div we dont type 'class' here we write there 'className'.
+
+```
+<div className="expense-item">
+  <div>March 31st 2023</div>
+  <div className="expense-item__description"> <h2>Car Insurance </h2>
+  <div className="expense-item__price">$293.23
+  </div>
+  </div>
+</div>
+```
+
+- This is not really HTML; it looks like HTML but its special JSX syntax invented by React team; but it's still JavaScript code.
+- We can write class instead of className it will work but technically we should write className as class is a reserved word of JavaScript.
+
+### Outputing Dynamic Data & working with expressions in JSX
+
+- To add javascript code in html code to output dynamic data we use a special syntax inside of JSX code snippets; we can relapce had coded data with curly braces {}.
+- The sepcial thing about these curly braces inside of our JSX code snippets is that in these curly braces between them we can run basic JavaScript expressions.
+- In case of date; it is consider as a object it cant be output texts. for printing date we have to call ISOString() built in method avilable on all date objects to output it as a string.
