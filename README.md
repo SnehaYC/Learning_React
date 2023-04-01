@@ -320,3 +320,10 @@ export default ExerciseComponent;
 ### Spliting components into Multiple Components
 
 - If we have a component that has no content between opening and closing tags we can also write it as a self-closing element.
+
+### Assignment 1:
+
+- Create a new component that is responsible for displaying expenses
+- Add multiple ExpenseItem components in that component
+- Keep the expenses data in the App component and pass that data into the newly created component
+- Add css file.
