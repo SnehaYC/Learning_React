@@ -327,3 +327,13 @@ export default ExerciseComponent;
 - Add multiple ExpenseItem components in that component
 - Keep the expenses data in the App component and pass that data into the newly created component
 - Add css file.
+
+### Concept of "Composition"
+
+- Composition is nothing but where you combine HTML code, JSX code and styling, extra JavaScript logic (as we done in ExpenseDate.js) this is known as building components.
+- We build these components to then build a user interface.
+- We are already doing this
+  - In App.js we're using Expenses
+  - In Expenses we're using ExpenseItem
+  - In ExpenseItem we're using ExpenseDate
+- This apporach of building a user interface from smaller building blocks is called as composition.
