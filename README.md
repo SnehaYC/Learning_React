@@ -345,3 +345,9 @@ export default ExerciseComponent;
 - We have added one Custom component - Card (all the default HTML component supports class name for adding CSS classes to the rendered HTML elements) but as our Card component is custom component so we have to write code for eveything.
 - So we have to tweak our code in Card.js (const classes = "card " + props.className;)
 - SO anything we recive as a class name from outside is added to that string and then we can dynamically point class.
+
+### Summary
+
+1. React Code Syntax & JSX
+2. Working with Components
+3. Working with Data
