@@ -337,3 +337,11 @@ export default ExerciseComponent;
   - In Expenses we're using ExpenseItem
   - In ExpenseItem we're using ExpenseDate
 - This apporach of building a user interface from smaller building blocks is called as composition.
+
+### How to use reusable wrapper components?
+
+- In react we have one special prop which is built into React, which every component receives if we never set it explicitly; it's a children prop.
+- Children is a reserved name
+- We have added one Custom component - Card (all the default HTML component supports class name for adding CSS classes to the rendered HTML elements) but as our Card component is custom component so we have to write code for eveything.
+- So we have to tweak our code in Card.js (const classes = "card " + props.className;)
+- SO anything we recive as a class name from outside is added to that string and then we can dynamically point class.
