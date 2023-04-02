@@ -351,3 +351,36 @@ export default ExerciseComponent;
 1. React Code Syntax & JSX
 2. Working with Components
 3. Working with Data
+
+### JSX
+
+- In the imported React object there is a createElement method.
+- return.createElement() this method takes 3 argument-
+
+  1. First argument is the element which should be created ex. div
+  2. second argument is an object that configures this element (an object which sets all the attributes of the element(div)), so currently div doesn't have any argument so we can pass an empty object.
+  3. Third object is next element which are present in div.
+
+- ex.
+
+```javascript
+  return {
+    <div>
+      <h2>Let's get started</h2>
+      <Expenses items={expenses} />
+    </div>
+  }
+```
+
+- This is the alternative of JSX code using React object.
+
+```javascript
+return React.createElement(
+  "div",
+  {},
+  React.createElement("h2", {}, "Let's get started")
+  React.creatElement(Expenses,{items:expenses},)
+);
+```
+
+- This syntax little bit complex and it get's automatically created when we use JSX code; so that's why in the past we import react from React in all component file.
