@@ -384,3 +384,10 @@ return React.createElement(
 ```
 
 - This syntax little bit complex and it get's automatically created when we use JSX code; so that's why in the past we import react from React in all component file.
+
+## Section - IV
+
+### React State and Working with Events
+
+- React allows you to create re-usable and reactive components consisting of HTML, JavaScript and CSS.
+-
