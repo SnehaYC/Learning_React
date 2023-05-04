@@ -409,4 +409,9 @@ export default function App() {
 }
 ```
 
-###
+### How component functions are executed
+
+- Component is a function; the only special thing about that function, is that it returns JSX.
+- We never called our component functions, instead we just used these functions like HTML elements in the JSX code.
+- By using our components in JSX code, we make React aware of our component functions. For example here, we make react aware of the expense item function. And whenever react evaluates this JSX code, it will call these component functions. And these component functions stand to return JSX code, which is all the evaluated, up until there's no more JSX code to be evaluated. So react keeps on calling any component functions it encounters in JSX, then calls any functions that those functions might have returned so any elements those components might have used in their JSX code until there are no more functions left.
+- So in the case of expenses.js, if react encounters this expense item, it calls this expense item component function, executes all the code in there, encounters this JSX code and calls this card function and this expense state function and then it goes through the JSX code of this components until there's no more component code left to call. And then it re-evaluates the overall result and translates that into DOM instructions which renders something like this on the screen. That's how react works.
