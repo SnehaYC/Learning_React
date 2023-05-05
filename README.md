@@ -413,4 +413,21 @@ export default function App() {
 
 - Component is a function; the only special thing about that function, is that it returns JSX.
 - We never called our component functions, instead we just used these functions like HTML elements in the JSX code.
-- It's all started by the index.js file, where we initially point at this app component. That's the first component function which is being called and that happens when the react app is been loaded on the screen which happens when the page is been visited. So that's how react goes through all these components executes all these components functions and draws something on to the screen. The only problem with that is, that react never repeats that. React goes through all of that when the application is initially rendered, but thereafter it's done. However in modern applications, of course you sometimes want to update what's visible on the screen, for example because a button was clicked and that button should change some text which is being output. So we need a way of telling react that something changed and that a certain component should be re-evaluated and that's where react introduces a special concept called state.
+- It's all started by the index.js file, where we initially point at this app component. That's the first component function which is being called and that happens when the react app is been loaded on the screen which happens when the page is been visited.
+- So that's how react goes through all these components executes all these components functions and draws something on to the screen. The only problem with that is, that react never repeats that.
+- React goes through all of that when the application is initially rendered, but thereafter it's done. However in modern applications, of course you sometimes want to update what's visible on the screen, for example because a button was clicked and that button should change some text which is being output.
+- So we need a way of telling react that something changed and that a certain component should be re-evaluated and that's where react introduces a special concept called state.
+
+### Working with "State"
+
+- We have to import useState function
+- useState is a react hook
+- all these React hooks can be recognized by the fact that they start with the word "use" in their name and all these hooks must only be called inside of React component functions like ExpenseItem.
+- they all just shouldn't be called in any nested functions.
+- They must be called directly inside such component functions.
+- useState we basically create a special kind of variable, a variable where changes will lead this component function to be called again. And we can therefore assign an initial value for that special variable.
+- useState actually returns an array where the first value is the variable itself, the value itself And the second element in the array is that updating function.
+- useState, always returns an array with exactly two elements. the first element is the current state value and the second element is a function for updating that.
+- Why do we have this state updating function? instead of assigning a new value like this?
+  - The reason for that is, that calling this function does not just assign a new value to some variable, but that instead it is a special variable to begin with. It's managed by React somewhere in memory and when we call this state updating function, this special variable will not just receive a new value but, and that's important, the component function in which you called this state updating function and in which you initialized your state with useState.
+- If you have data, which might change and where changes to that data should be reflected on the user interface then you need state.
