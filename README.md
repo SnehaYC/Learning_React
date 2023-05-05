@@ -431,3 +431,27 @@ export default function App() {
 - Why do we have this state updating function? instead of assigning a new value like this?
   - The reason for that is, that calling this function does not just assign a new value to some variable, but that instead it is a special variable to begin with. It's managed by React somewhere in memory and when we call this state updating function, this special variable will not just receive a new value but, and that's important, the component function in which you called this state updating function and in which you initialized your state with useState.
 - If you have data, which might change and where changes to that data should be reflected on the user interface then you need state.
+
+- Exercise: Working with "State"
+  - You're working on a part of an online shop where a discounted price should be displayed on the screen once the user clicked a button.
+  - Your task is to add an event listener to listen for clicks on the button that's already included in the App component.
+  - Upon a button click, the price should change from $100 to $75.
+  - Add a state value to the existing App component function and make sure the state value is both updated upon button clicks and output as part of the JSX code.
+  - Solution:
+
+```javascript
+import React, { useState } from "react";
+import "./styles.css";
+export default function App() {
+  const [price, setPrice] = useState(100);
+  function clickHandler() {
+    setPrice(75);
+  }
+  return (
+    <div>
+      <p>${price}</p>
+      <button onClick={clickHandler}>Apply Discount</button>
+    </div>
+  );
+}
+```
