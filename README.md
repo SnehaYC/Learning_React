@@ -455,3 +455,9 @@ export default function App() {
   );
 }
 ```
+
+### A Closer Look at the "useState" Hook
+
+- If we change the title in the first ExpenseItem the other ones are not affected because they have their own State.
+
+### Adding Form Inputs
