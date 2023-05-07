@@ -461,3 +461,5 @@ export default function App() {
 - If we change the title in the first ExpenseItem the other ones are not affected because they have their own State.
 
 ### Adding Form Inputs
+
+- We have added min and max to the date because we're gonna add their some filters
