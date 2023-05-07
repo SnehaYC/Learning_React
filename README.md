@@ -463,3 +463,11 @@ export default function App() {
 ### Adding Form Inputs
 
 - We have added min and max to the date because we're gonna add their some filters
+
+### Listing to user input
+
+- In VanillaJS
+
+```javaScript
+document.getElementById('').addEventListener('click',(event)=>{})
+```
