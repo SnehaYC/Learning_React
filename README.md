@@ -471,3 +471,5 @@ export default function App() {
 ```javaScript
 document.getElementById('').addEventListener('click',(event)=>{})
 ```
+
+- We can call useState multiple time
