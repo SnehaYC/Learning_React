@@ -490,3 +490,56 @@ setUserInput((prevState) => {
   };
 });
 ```
+
+- Exercise: Using State with Form Inputs
+  - You're working on a text messaging app and your task is to validate the text entered by a user whilst the user is typing.
+  - If the text message entered is valid (for this example: if it's at least 3 characters long), the text "Valid message" should be displayed below the input field.
+  - If it's invalid (i.e., shorter than 3 characters), the text "Invalid message" should be displayed.
+- Solution:
+
+```javascript
+import React from "react";
+import "./styles.css";
+export default function App() {
+  const [messageValidity, setMessageValidity] = React.useState("Invalid");
+  function messageChangeHandler(event) {
+    const value = event.target.value;
+    if (value.trim().length < 3) {
+      setMessageValidity("Invalid");
+    } else {
+      setMessageValidity("Valid");
+    }
+  }
+  return (
+    <form>
+      <label>Your message</label>
+      <input type="text" onChange={messageChangeHandler} />
+      <p>{messageValidity} message</p>
+    </form>
+  );
+}
+```
+
+- Exercise: Updating State Based On Older State
+
+  - Your task is to build a basic counter that should increment whenever the "Increment" button is clicked.
+  - Whilst this task allows you to apply your general knowledge about event handling and state.
+  - Solution:
+
+  ```javascript
+  import React from "react";
+  import "./styles.css";
+  export default function App() {
+    const [counter, setCounter] = React.useState(0);
+
+    function incrementCounterHandler() {
+      setCounter((prevCounter) => prevCounter + 1);
+    }
+    return (
+      <div>
+        <p id="counter">{counter}</p>
+        <button onClick={incrementCounterHandler}>Increment</button>
+      </div>
+    );
+  }
+  ```
