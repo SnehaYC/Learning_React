@@ -478,7 +478,7 @@ document.getElementById('').addEventListener('click',(event)=>{})
 
 - Spread Operator: pulls out all the key value pairs, and adds them to this new object.
 
-### Using
+### Different ways to handle previous state
 
 - If you use this following approach, React will guarantee that the state snapshot it gives you here in this inner function, will always be the latest state snapshot.
 
