@@ -543,3 +543,9 @@ export default function App() {
     );
   }
   ```
+
+### Handling form submission
+
+- We can add onClick eventlistner to a submit button in the form but it is not a best practice because there is a default behavior built into the browser and built into forums on web pages.
+- If a button, especially with type submit is pressed instead of a forum, this overall forum element will emit an event to which we can listen and that's the submit event.
+- So it's on this forum where I wanna react to on submit and then execute some function whenever this forum is being submitted.
