@@ -473,3 +473,7 @@ document.getElementById('').addEventListener('click',(event)=>{})
 ```
 
 - We can call useState multiple time
+
+### Using one state
+
+- Spread Operator: pulls out all the key value pairs, and adds them to this new object.
