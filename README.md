@@ -477,3 +477,16 @@ document.getElementById('').addEventListener('click',(event)=>{})
 ### Using one state
 
 - Spread Operator: pulls out all the key value pairs, and adds them to this new object.
+
+### Using
+
+- If you use this following approach, React will guarantee that the state snapshot it gives you here in this inner function, will always be the latest state snapshot.
+
+```javascript
+setUserInput((prevState) => {
+  return {
+    ...prevState,
+    enteredTitle: event.target,
+  };
+});
+```
