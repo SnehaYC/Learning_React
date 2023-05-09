@@ -582,3 +582,6 @@ export default function App() {
 
 - Lifting state up is about moving data from a child component to some parent component to either use it there or to then pass it down to some other child component.
 - we can only communicate from parent to child and from child to parent.
+
+- Exercise
+  - Add filter component
