@@ -585,3 +585,8 @@ export default function App() {
 
 - Exercise
   - Add filter component
+
+### Controlled vs Uncontrolled Components & Stateless vs Stateful Components
+
+- Whenever you use two way binding you are controlling a component but here we're controlling our own custom component.
+- Those components doesn't have any internal state or they are just there to output some data are known as state less component or presentational or dumb component
