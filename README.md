@@ -549,3 +549,10 @@ export default function App() {
 - We can add onClick eventlistner to a submit button in the form but it is not a best practice because there is a default behavior built into the browser and built into forums on web pages.
 - If a button, especially with type submit is pressed instead of a forum, this overall forum element will emit an event to which we can listen and that's the submit event.
 - A part of this default browser behavior is that if you do click this button, the page reloads because the browser actually automatically sends a request whenever a form is submitted to the server which is hosting this webpage. we can disable or prevent this default behavior because we again get an event object here, automatically just as for the change events and on this object, we can call a prevent default method.
+
+### Adding Two-Way Binding
+
+- What is two-way binding: for inputs we don't just listen to changes, but we can also pass a new value back into the input. So that we can reset or change the input programmatically.
+- We just have to add value attribute to the input element this will set a internal value property which every input element has.
+- Why we use this: We can call state and again we can set it to an empty string.
+- Two-way binding is very useful when you're working with forms because it allows you to gather user input.
