@@ -556,3 +556,24 @@ export default function App() {
 - We just have to add value attribute to the input element this will set a internal value property which every input element has.
 - Why we use this: We can call state and again we can set it to an empty string.
 - Two-way binding is very useful when you're working with forms because it allows you to gather user input.
+
+### Child-to-Parent Component Communication(Bottom-Up)
+
+- We can set a value on onchange prop and adds that listener on the rendered input element but that is a pattern we can replicate for our own components as well.
+- We can create our own event props, if we wanna call it like, and we can expect functions as values and that would allow us to pass a function from a parent component to a child component and then call that function inside of the child component and when we then call a function, we can of course pass data to that function as a parameter and that's how we can communicate up from child to parent.
+- Props can only be passed from parent to child, we can't skip intermediate components.
+
+- How to communicate between component?
+
+  - In our case: We can call a function in the new expense component and we can pass data as a parameter. So here, when we call onSave expense data in the expenseForm, I can pass the expenseData which are generated here as shown in below
+  - ```javascript
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredAmount,
+      date: new Date(enteredDate),
+    };
+    ```
+  - our argument and that's the value which we'll receive as a parameter in newExpense.
+
+- what is onAddExpense?
+  - that it's a function pointer which has passed as our argument and then I pass a pointer at add expense handler to the on expense prop on new expense, and therefore inside of new expense, we can now call it.
