@@ -577,3 +577,8 @@ export default function App() {
 
 - what is onAddExpense?
   - that it's a function pointer which has passed as our argument and then I pass a pointer at add expense handler to the on expense prop on new expense, and therefore inside of new expense, we can now call it.
+
+### Lifting State Up
+
+- Lifting state up is about moving data from a child component to some parent component to either use it there or to then pass it down to some other child component.
+- we can only communicate from parent to child and from child to parent.
