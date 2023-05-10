@@ -596,5 +596,35 @@ export default function App() {
 ### Rendering Lists and Conditional Content
 
 - Rendering Lists of Data
+
   - To render list dynamically we use map function it creates a new array based on another array, and that basically transforms every element in that original array.
   - This method which we can call, takes a function, which we pass as an argument, and that function is then executed for every item in the array on which we're calling map, and the result of this function is the element which will be added to the newly created array.
+
+- Exercise: Rendering Lists of Data
+  - You're working on a "Todo List" web app and your task is to output a list of dummy todo items dynamically. For this task, a Todo component has been prepared for you, though you must still add some code to it to receive and output the todo text.
+  - To be more precise: In the App component, you should transform the DUMMY_TODOS array that's provided to you (which must not be changed!) to a list of JSX elements (<Todo> elements to be precise). Every Todo component item must receive and output the todo text via a prop called text.
+  - Solution:
+    - App.js
+  ```javascript
+  import React from "react";
+  import Todo from "./Todo";
+  import "./styles.css";
+  const DUMMY_TODOS = ["Learn React", "Practice React", "Profit!"];
+  export default function App() {
+    return (
+      <ul>
+        {DUMMY_TODOS.map((todo) => (
+          <Todo text={todo} />
+        ))}
+      </ul>
+    );
+  }
+  ```
+  - Todo.js
+  ```javascript
+  import React from "react";
+  export default function Todo(props) {
+    return <li>{props.text}</li>;
+  }
+  ```
+- Using Stateful Lists
