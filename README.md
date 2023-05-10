@@ -633,3 +633,4 @@ export default function App() {
 - Outputting Conditional Content
   - Ternary expression is a default javascript expression
   - Using &&
+  - Storing JSX content in variable
