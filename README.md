@@ -628,3 +628,7 @@ export default function App() {
   }
   ```
 - Using Stateful Lists
+- Exercise: Filterout lists by year
+
+- Outputting Conditional Content
+  - Ternary expression is a default javascript expression
