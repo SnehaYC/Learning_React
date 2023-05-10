@@ -590,3 +590,11 @@ export default function App() {
 
 - Whenever you use two way binding you are controlling a component but here we're controlling our own custom component.
 - Those components doesn't have any internal state or they are just there to output some data are known as state less component or presentational or dumb component
+
+## Section - V
+
+### Rendering Lists and Conditional Content
+
+- Rendering Lists of Data
+  - To render list dynamically we use map function it creates a new array based on another array, and that basically transforms every element in that original array.
+  - This method which we can call, takes a function, which we pass as an argument, and that function is then executed for every item in the array on which we're calling map, and the result of this function is the element which will be added to the newly created array.
