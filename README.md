@@ -669,3 +669,5 @@ export default function App() {
     );
   }
   ```
+  - Demo App: Adding Chart
+    -
