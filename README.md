@@ -671,9 +671,3 @@ export default function App() {
   ```
 - Demo App: Adding Chart
 - Project - 1 Link:
-
-## Section -VI
-
-### Styling React Components
-
--
