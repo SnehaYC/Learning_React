@@ -68,3 +68,11 @@
   ```
 
 - Introducing Styled Components
+  - Approach 1: Styled Components
+    - Style components is a package that helps you build components which have certain styles attached to them where the styles really only affect the components to which they were attached and not any other components.
+    - Attacked template literal:
+    ```javascript
+    const Button = styled.button``;
+    ```
+    - 'button' is simply a method on this styled object Styled is an object we're importing from style components and there we can access the button method
+      It's just a special kind of method. Instead of being a method, which we can call with parentheses, we can add back ticks after it and that's just a default JavaScript syntax
