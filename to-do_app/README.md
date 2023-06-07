@@ -76,3 +76,4 @@
     ```
     - 'button' is simply a method on this styled object Styled is an object we're importing from style components and there we can access the button method
       It's just a special kind of method. Instead of being a method, which we can call with parentheses, we can add back ticks after it and that's just a default JavaScript syntax
+- Styled Components & Dynamic Props
